@@ -2,26 +2,28 @@
 <html lang="uk">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KCVD665WP6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KCVD665WP6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-KCVD665WP6');
-</script>
+        gtag('config', 'G-KCVD665WP6');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Юлія Чон - Викладач корейської мови</title>
 
     <!-- Meta description -->
-    <meta name="description" content="Професійний викладач корейської мови Юлія Чон, допоможе учням досягти флюенції через захоплюючі уроки. Запишіться на уроки зараз!">
-    <meta name="description" content="Юлия Чон - преподаватель корейского языка. Запишитесь на увлекательные уроки корейского языка с профессионалом.">
+    <meta name="description"
+        content="Професійний викладач корейської мови Юлія Чон, допоможе учням досягти флюенції через захоплюючі уроки. Запишіться на уроки зараз!">
+    <meta name="description"
+        content="Юлия Чон - преподаватель корейского языка. Запишитесь на увлекательные уроки корейского языка с профессионалом.">
 
     <!-- Keywords -->
-   <meta name="keywords" content="вивчення корейської мови, уроки корейської, вчитель корейської мови, Юлія Чон, репетитор корейська, онлайн уроки корейська, корейский язык, 
+    <meta name="keywords" content="вивчення корейської мови, уроки корейської, вчитель корейської мови, Юлія Чон, репетитор корейська, онлайн уроки корейська, корейский язык, 
        Юлия Чон, Юлия Чжен, курсы корейского языка, преподаватель корейского языка, уроки корейского языка, учить корейский, курси корейської мови онлайн, вчитель корейської мови онлайн, 
        корейська для початківців, репетитор корейської мови онлайн, навчання корейської мови, Юлія Чон уроки корейської, онлайн курси корейської мови, вивчати корейську мову з нуля, 
        приватні уроки корейської мови, заняття з корейської мови, як вивчити корейську мову, Юлія Чон вчитель корейської, learning Korean language, Korean language lessons, Korean
@@ -79,12 +81,21 @@
     <link rel="icon" type="image/png" sizes="512x512" href="img/Favicon/android-chrome-512x512.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/Favicon/apple-touch-icon.png">
     <link rel="icon" href="https://teacher-juliajeon.com/img/Favicon/favicon-16x16.png" type="image/x-icon">
-<link rel="shortcut icon" href="https://teacher-juliajeon.com/img/Favicon/favicon-16x16.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://teacher-juliajeon.com/img/Favicon/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- Подключение стилей Slick -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
 
 </head>
 
 
 <body>
+
+
 
     <header id="header" class="header">
         <div class="container">
@@ -93,40 +104,37 @@
                 <a href="#!" class="logo">Julia</a>
 
                 <nav id="nav" class="nav">
-                    <ul class="nav-list">
+                    <ul id="nav-list" class="nav-list">
                         <li class="nav-item"><a href="#header" class="nav-link active">Головна</a></li>
-                        <li class="nav-item"><a href="#about" class="nav-link ">Про мене</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">Про мене</a></li>
                         <li class="nav-item"><a href="#reviews" class="nav-link">Відгуки</a></li>
                         <li class="nav-item"><a href="#FAQ" class="nav-link">Питання</a></li>
                         <li class="nav-item"><a href="#footer" class="nav-link">Контакти</a></li>
                         <li>
-
                             <a href="index.html" class="nav-link active2" id="lang-ukr">UKR</a> /
-                            <a href="index-en.html" class="nav-link " id="lang-en">EN</a>
+                            <a href="index-en.html" class="nav-link" id="lang-en">EN</a>
                         </li>
-
-
-
                     </ul>
-                    <button id="nav-btn" class="nav-button">
-                        <img id="nav-btn-img" src="img/icons/nav-open.svg" alt="Nav button">
-                    </button>
+                    <div class="nav__burger" id="burger-menu">
+                        <div class="nav__burger-line"></div>
+                        <div class="nav__burger-line"></div>
+                        <div class="nav__burger-line"></div>
+                    </div>
                 </nav>
             </div>
-
-            <!-- Header content -->
             <div class="header-row">
 
                 <div class="header-content" data-aos="fade-up">
                     <h1 class="header-heading">Юлія Чон<br><span>Викладач корейської мови</span></h1>
-                    <p>"Професійний викладач корейської мови, який допоможе учням досягти флюенції та культурного
-                        розуміння через захоплюючі уроки."</p>
+                    <p>Професійний викладач корейської мови, який допоможе учням досягти флюенції та культурного
+                        розуміння через захоплюючі уроки</p>
                 </div>
 
                 <div class="header-img" data-aos="fade-left">
                     <picture class="picture">
                         <source media="(max-width: 799px)" srcset="img/header/IMG_0016.png">
-                        <img src="img/header/IMG_0016.png" alt="">
+                        <img class="julia-pic" src="img/header/IMG_0016.png" alt="">
+                        <div class="ellipse"></div>
                     </picture>
                 </div>
             </div>
@@ -134,19 +142,27 @@
     </header>
 
 
-  <!-- About -->
+
+    <!-- About -->
     <section class="section section--about" id="about">
         <div class="container">
-            <h2 class="section__title">Про мене</h2>
+            <h2 class="section__title" data-aos="fade-up" data-aos-duration="1000">Про мене</h2>
             <!-- <p>This section provides information about Julia and her teaching approach.</p> -->
+
             <div class="text">
-                <p> Привіт усім!<br>
-               Мене звати Юлія, я етнічна кореянка з України, яка наразі навчається в Університеті Кємьон у Південній Кореї.
-                    З 2021 року маю досвід викладання корейської мови та досвід роботи перекладачем для іноземних клієнтів.
-                    Я захоплена допомогою студентам досягати вільності у володінні мовою. Мій підхід до викладання фокусується на граматиці,
-                    словниковому запасі та розмовній практиці, використовуючи матеріали з Національного університету Сеула.
-                    Я намагаюся створити цікаве навчальне середовище, де студенти можуть насолоджуватися красою корейської мови та культури.
-            Із нетерпінням чекаю можливості поділитися своїми знаннями та досвідом, проводячи Вас на Вашому шляху до оволодіння корейською мовою!</p>
+                <p data-aos="fade-up" data-aos-duration="1000"> Привіт усім!<br>
+                    Мене звати Юлія, я етнічна кореянка з України, яка наразі навчається в Університеті Кємьон у
+                    Південній Кореї.
+                    З 2021 року маю досвід викладання корейської мови та досвід роботи перекладачем для іноземних
+                    клієнтів.
+                    Я захоплена допомогою студентам досягати вільності у володінні мовою. Мій підхід до викладання
+                    фокусується на граматиці,
+                    словниковому запасі та розмовній практиці, використовуючи матеріали з Національного університету
+                    Сеула.
+                    Я намагаюся створити цікаве навчальне середовище, де студенти можуть насолоджуватися красою
+                    корейської мови та культури.
+                    Із нетерпінням чекаю можливості поділитися своїми знаннями та досвідом, проводячи Вас на Вашому
+                    шляху до оволодіння корейською мовою!</p>
             </div>
         </div>
 
@@ -154,77 +170,94 @@
     </section>
     <!-- Reviews -->
 
-    <section class="section  section--clients" class="reviews" id="reviews">
+    <section class="section section--clients" id="reviews">
         <div class="container">
-            <h2 class="section__title">Відгуки учнів</h2>
-            <div class="clients">
-               <div class="clients__item">
-                    <img class="clients__photo" src="img/Reviews/client2.jpg" alt="">
-                    <div class="clients__content">
-                        <div class="clients__name">Катерина</div>
-
-                        <div class="clients__text">
-                            "Займалися з Юлією 2 роки, уроки проходили комфортно та інформативно. Надає дуже багато
-                            додаткових матеріалів та знайомить із культурою та особливостями життя Кореї. Я склала TOPIK
-                            на 4 рівень, тому раджу всім уроки з Юлією. Вона не тільки хороший викладач, а і прекрасна
-                            людина💕."</div>
+            <h2 class="section__title" data-aos="fade-up" data-aos-duration="1000">Відгуки учнів</h2>
+            <div class="clients-slider-wrapper">
+                <button class="slider-btn prev-btn">←</button>
+                <div class="clients-slider">
+                    <div class="clients__item">
+                        <img class="clients__photo" src="img/Reviews/client2.jpg" alt="">
+                        <div class="clients__content">
+                            <div class="clients__name">Катерина</div>
+                            <div class="clients__text">
+                                "Займалися з Юлією 2 роки, уроки проходили комфортно та інформативно. Надає дуже багато
+                                додаткових матеріалів та знайомить із культурою та особливостями життя Кореї. Я склала
+                                TOPIK
+                                на 4 рівень, тому раджу всім уроки з Юлією. Вона не тільки хороший викладач, а і
+                                прекрасна
+                                людина💕."
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clients__item">
+                        <img class="clients__photo" src="img/Reviews/client3.jpg" alt="">
+                        <div class="clients__content">
+                            <div class="clients__name">Єва</div>
+                            <div class="clients__text">
+                                "Юлія — чудовий викладач корейської мови! Вона дуже професійна та доброзичлива.
+                                Заняття завжди проходять цікаво та структуровано, з використанням сучасних матеріалів.
+                                Завдяки урокам з нею я швидко досягла значного прогресу у вивченні мови.
+                                Дуже вдячна за підтримку та мотивацію! Рекомендую Юлію всім, хто хоче вивчати корейську
+                                мову!"
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clients__item">
+                        <img class="clients__photo" src="img/Reviews/client4.jpg" alt="">
+                        <div class="clients__content">
+                            <div class="clients__name">Марія</div>
+                            <div class="clients__text">
+                                "Наші уроки з Юлією мені дуже подобалися. Я впевнена, що мій такий швидкий прогрес на
+                                99%
+                                саме її заслуга.
+                                Наші уроки були прямо хобі і взагалі не відчувалися як навчання. Навпаки, іноді, коли я
+                                була
+                                сильно завантажена справами,
+                                думала: зараз би на урок. Всі наші знання зі мною досі і я дуже-дуже вдячна своєму
+                                вчителю🤗!"
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clients__item">
+                        <img class="clients__photo" src="img/Reviews/client1.jpg" alt="">
+                        <div class="clients__content">
+                            <div class="clients__name">Ірина </div>
+                            <div class="clients__text">
+                                "Одним з найкращих навчальних періодів в моєму житті був рік, коли я
+                                вивчала корейську мову з сонсенімом Юлією.
+                                Це було єдине, заради чого я прокидалася о 6 ранку, бо між Україною та Південною Кореєю
+                                великий часовий діапазон.
+                                Дружня підтримка, обговорення цікавих тем та дорам, мотивація! Найтепліші спогади та
+                                подяка
+                                за той неймовірний час!
+                                사랑해 선생님! 감사합니다 за все ❤️😘."
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clients__item">
+                        <img class="clients__photo" src="img/Reviews/client5.jpg" alt="">
+                        <div class="clients__content">
+                            <div class="clients__name">Поліна</div>
+                            <div class="clients__text">
+                                "Після того, як почала займатися з Юлією, навчання почало приносити
+                                більше задоволення та викликати інтерес.
+                                Я вчу корейську мову із перервами вже 3 роки. І серед багатьох вчителів, підхід до
+                                викладання у Юлії найкращий.
+                                Окрім вивчення мови, я також дізнаюсь багато цікавих фактів про Корею, про які раніше
+                                навіть
+                                поняття не мала. На заняття йду як на свято.
+                                І завжди все зрозуміло. Юлія дійсно цінній вчитель, якого варто пошукати! 🥰"
+                            </div>
+                        </div>
                     </div>
                 </div>
-                 <div class="clients__item">
-                    <img class="clients__photo" src="img/Reviews/client3.jpg" alt="">
-                    <div class="clients__content">
-                        <div class="clients__name">Єва</div>
+                <button class="slider-btn next-btn">→</button>
 
-                        <div class="clients__text">
-                            "Юлія — чудовий викладач корейської мови! Вона дуже професійна та доброзичлива .
-                            Заняття завжди проходять цікаво та структуровано, з використанням сучасних матеріалів.
-                            Завдяки урокам з нею я швидко досягла значного прогресу у вивченні мови. 
-                            Дуже вдячна за підтримку та мотивацію! Рекомендую Юлію всім, хто хоче вивчати корейську мову!"</div>
-                    </div>
-                </div>   
-                 <div class="clients__item">
-                    <img class="clients__photo" src="img/Reviews/client4.jpg" alt="">
-                    <div class="clients__content">
-                        <div class="clients__name">Марія</div>
-
-                        <div class="clients__text">
-                            "Наші уроки з Юлією мені дуже подобалися. Я впевнена, що мій такий швидкий прогрес на 99% саме її заслуга.
-                            Наші уроки були прямо хобі і взагалі не відчувалися як навчання. Навпаки, іноді, коли я була сильно завантажена справами, 
-                            думала: зараз би на урок. Всі наші знання зі мною досі і я дуже-дуже вдячна своєму вчителю🤗!"</div>
-                    </div>
-                </div>
-
-                 <div class="clients__item">
-                    <img class="clients__photo" src="img/Reviews/client1.jpg" alt="">
-                    <div class="clients__content">
-                        <div class="clients__name">Ірина </div>
-                        <div class="clients__text">"Одним з найкращих навчальних періодів в моєму житті був рік, коли я
-                            вивчала корейську мову з сонсенімом Юлією.
-                            Це було єдине, заради чого я прокидалася о 6 ранку, бо між Україною та Південною Кореєю
-                            великий часовий діапазон.
-                            Дружня підтримка, обговорення цікавих тем та дорам, мотивація! Найтепліші спогади та подяка
-                            за той неймовірний час!
-                            사랑해 선생님! 감사합니다 за все ❤️😘."</div>
-                    </div>
-                </div>
-
-                               <div class="clients__item">
-                    <img class="clients__photo" src="img/Reviews/client5.jpg" alt="">
-                    <div class="clients__content">
-                        <div class="clients__name">Поліна</div>
-                        <div class="clients__text">"Після того, як почала займатися з Юлією, навчання почало приносити більше задоволення та викликати інтерес.
-                          Я вчу корейську мову із перервами вже 3 роки. І серед багатьох вчителів, підхід до викладання у Юлії найкращий.
-                          Окрім вивчення мови, я також дізнаюсь багато цікавих фактів про Корею, про які раніше навіть поняття не мала. На заняття йду як на свято.
-                          І завжди все зрозуміло. Юлія дійсно цінній вчитель, якого варто пошукати! 🥰"</div>
-                    </div>
-                </div>
-               
-
-
-            </div><!-- /.clients -->
-
-        </div><!-- /.container -->
+            </div>
+        </div>
     </section>
+
 
 
 
@@ -233,8 +266,8 @@
 
     <section class="section" class="FAQ" id="FAQ">
         <div class="container">
-            <h2 class="section__title">Найчастіші Питання</h2>
- <div class="accordion">
+            <h2 class="section__title" data-aos="fade-up" data-aos-duration="1000">Найчастіші Питання</h2>
+            <div class="accordion">
                 <div class="accordion-item">
                     <button class="accordion-header">
                         Які умови проведення першого пробного заняття?
@@ -302,7 +335,7 @@
 
 
 
-<footer id="footer" class="contacts">
+    <footer id="footer" class="contacts">
         <div class="container">
             <div class="contacts-title">
                 <h2 class="title-1">Контакти</h2>
@@ -332,10 +365,15 @@
 
 
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
         integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Подключение скриптов Slick -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
     <script src="js/main.js"></script>
 </body>
 
