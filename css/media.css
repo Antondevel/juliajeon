@@ -61,6 +61,7 @@
 
 
 	.nav-list.active {
+		font-size: 25px;
 		opacity: 1;
 		visibility: visible;
 		/* Видимость становится true */
@@ -76,7 +77,7 @@
 		display: flex;
 		/* Меню всегда будет занимать место */
 		flex-direction: column;
-		gap: 15px;
+		gap: 30px;
 		position: absolute;
 		top: 100%;
 		right: 0;
