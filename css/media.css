@@ -72,6 +72,7 @@
 
 	/* Скрытие навигации по умолчанию */
 	.nav-list {
+		font-size: 25px;
 		width: 100%;
 		text-align: center;
 		display: flex;
