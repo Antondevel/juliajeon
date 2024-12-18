@@ -97,9 +97,11 @@
 
 
                     </ul>
-                    <button id="nav-btn" class="nav-button">
-                        <img id="nav-btn-img" src="img/icons/nav-open.svg" alt="Nav button">
-                    </button>
+                    <div class="nav__burger" id="burger-menu">
+                        <div class="nav__burger-line"></div>
+                        <div class="nav__burger-line"></div>
+                        <div class="nav__burger-line"></div>
+                    </div>
                 </nav>
             </div>
 
@@ -108,14 +110,15 @@
 
                 <div class="header-content" data-aos="fade-up">
                     <h1 class="header-heading">Julia Jeon<br><span>Кorean language teacher</span></h1>
-                    <p>"A professional Korean language teacher who will help students achieve fluence and culture
-                        understanding through exciting lessons."</p>
+                    <p>A professional Korean language teacher who will help students achieve fluence and culture
+                        understanding through exciting lessons</p>
                 </div>
 
                 <div class="header-img" data-aos="fade-left">
                     <picture class="picture">
                         <source media="(max-width: 799px)" srcset="img/header/IMG_0016.png">
-                        <img src="img/header/IMG_0016.png" alt="">
+                        <img class="julia-pic" src="img/header/IMG_0016.png" alt="">
+                        <div class="ellipse"></div>
                     </picture>
                 </div>
             </div>
@@ -133,10 +136,10 @@
     <!-- About -->
     <section class="section section--about" id="about">
         <div class="container">
-            <h2 class="section__title">About me </h2>
+            <h2 class="section__title" data-aos="fade-up" data-aos-duration="1000">About me </h2>
             <!-- <p>This section provides information about Julia and her teaching approach.</p> -->
             <div class="text">
-                <p> Hello everyone!<br>
+                <p data-aos="fade-up" data-aos-duration="1000"> Hello everyone!<br>
                     My name is Julia, I am an ethnic Korean from Ukraine, who is currently studying at the Keimyung
                     University in South Korea. Since 2021 I have experience in teaching Korean and working as an
                     interpreter for foreigners. I passionate about helping students achieve fluency in language
@@ -153,80 +156,99 @@
 
     <section class="section  section--clients" class="reviews" id="reviews">
         <div class="container">
-            <h2 class="section__title">Student reviews</h2>
-            <div class="clients">
-                <div class="clients__item">
-                    <img class="clients__photo" src="img/Reviews/client2.jpg" alt="">
-                    <div class="clients__content">
-                        <div class="clients__name">Catherine</div>
+            <h2 class="section__title" data-aos="fade-up" data-aos-duration="1000">Student reviews</h2>
+            <div class="clients-slider-wrapper">
+                <button class="slider-btn prev-btn">←</button>
+                <div class="clients-slider">
 
-                        <div class="clients__text">
-                            "I studied with Julia for 2 years, and the lessons were comfortable and informative. She
-                            provides a lot of additional materials and introduces the culture and peculiarities of life
-                            in Korea. I passed TOPIK at level 4, so I recommend lessons with Julia to everyone. She is
-                            not only a good teacher but also a wonderful person 💕."</div>
+
+                    <div class="clients__item">
+                        <img class="clients__photo" src="img/Reviews/client2.jpg" alt="">
+                        <div class="clients__content">
+                            <div class="clients__name">Catherine</div>
+
+                            <div class="clients__text">
+                                "I studied with Julia for 2 years, and the lessons were comfortable and informative. She
+                                provides a lot of additional materials and introduces the culture and peculiarities of
+                                life
+                                in Korea. I passed TOPIK at level 4, so I recommend lessons with Julia to everyone. She
+                                is
+                                not only a good teacher but also a wonderful person 💕."</div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="clients__item">
-                    <img class="clients__photo" src="img/Reviews/client3.jpg" alt="">
-                    <div class="clients__content">
-                        <div class="clients__name">Eve</div>
+                    <div class="clients__item">
+                        <img class="clients__photo" src="img/Reviews/client3.jpg" alt="">
+                        <div class="clients__content">
+                            <div class="clients__name">Eve</div>
 
-                        <div class="clients__text">
-                            "Julia is a wonderful Korean language teacher! She is very professional and friendly. The
-                            lessons are always interesting and structured, using modern materials. Thanks to her
-                            lessons, I quickly made significant progress in learning the language. I am very grateful
-                            for her support and motivation! I recommend Julia to everyone who wants to learn Korean!"
+                            <div class="clients__text">
+                                "Julia is a wonderful Korean language teacher! She is very professional and friendly.
+                                The
+                                lessons are always interesting and structured, using modern materials. Thanks to her
+                                lessons, I quickly made significant progress in learning the language. I am very
+                                grateful
+                                for her support and motivation! I recommend Julia to everyone who wants to learn
+                                Korean!"
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clients__item">
+                        <img class="clients__photo" src="img/Reviews/client4.jpg" alt="">
+                        <div class="clients__content">
+                            <div class="clients__name">Maria</div>
+
+                            <div class="clients__text">"I really liked our lessons with Julia. I am sure that 99% of my
+                                rapid progress is due to my teacher Julia. Our lessons were just a hobby and did not
+                                feel
+                                like study at all. Besides, sometimes, when I was very busy with things, I thought: it
+                                would
+                                be so nice to take my Korean class now.
+                                All the knowledge I gained with Julia is still with me and I am very, very grateful to
+                                my
+                                teacher🤗"
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clients__item">
+                        <img class="clients__photo" src="img/Reviews/client1.jpg" alt="">
+                        <div class="clients__content">
+                            <div class="clients__name">Irina</div>
+
+                            <div class="clients__text">"One of the best learning periods in my life was the year I
+                                studied
+                                Korean with teacher Julia. It was the only reason I would wake up at 6 a.m. because of
+                                the
+                                big time difference between Ukraine and South Korea. Friendly support, discussions
+                                about interesting topics and doramas, motivation! The warmest memories and gratitude for
+                                that
+                                amazing time! 사랑해 선생님! 감사합니다 for everything ❤️😘."</div>
+                        </div>
+                    </div>
+
+                    <div class="clients__item">
+                        <img class="clients__photo" src="img/Reviews/client5.jpg" alt="">
+                        <div class="clients__content">
+                            <div class="clients__name">Polina</div>
+
+                            <div class="clients__text">"After I started studying Korean with Julia, learning began to
+                                bring
+                                more pleasure and arouse interest.
+                                I have been studying Korean on and off for 3 years.
+                                And among many teachers, Julia's approach to teaching is the best. In addition to
+                                learning
+                                the language,
+                                I also learn many interesting facts about Korea that I had no idea about before. Going
+                                to
+                                class is like going to a Party.
+                                And everything is always clear and understandable.
+                                Julia is really valuable teacher who is worth looking for! 🥰"</div>
                         </div>
                     </div>
                 </div>
-
-                <div class="clients__item">
-                    <img class="clients__photo" src="img/Reviews/client4.jpg" alt="">
-                    <div class="clients__content">
-                        <div class="clients__name">Maria</div>
-
-                        <div class="clients__text">"I really liked our lessons with Julia. I am sure that 99% of my
-                            rapid progress is due to my teacher Julia. Our lessons were just a hobby and did not feel
-                            like study at all. Besides, sometimes, when I was very busy with things, I thought: it would
-                            be so nice to take my Korean class now.
-                            All the knowledge I gained with Julia is still with me and I am very, very grateful to my
-                            teacher🤗"
-                        </div>
-                    </div>
-                </div>
-
-                <div class="clients__item">
-                    <img class="clients__photo" src="img/Reviews/client1.jpg" alt="">
-                    <div class="clients__content">
-                        <div class="clients__name">Irina</div>
-
-                        <div class="clients__text">"One of the best learning periods in my life was the year I studied
-                            Korean with teacher Julia. It was the only reason I would wake up at 6 a.m. because of the
-                            big time difference between Ukraine and South Korea. Friendly support, discussions
-                            about interesting topics and doramas, motivation! The warmest memories and gratitude for
-                            that
-                            amazing time! 사랑해 선생님! 감사합니다 for everything ❤️😘."</div>
-                    </div>
-                </div>
-
-                <div class="clients__item">
-                    <img class="clients__photo" src="img/Reviews/client5.jpg" alt="">
-                    <div class="clients__content">
-                        <div class="clients__name">Polina</div>
-
-                        <div class="clients__text">"After I started studying Korean with Julia, learning began to bring
-                            more pleasure and arouse interest.
-                            I have been studying Korean on and off for 3 years.
-                            And among many teachers, Julia's approach to teaching is the best. In addition to learning
-                            the language,
-                            I also learn many interesting facts about Korea that I had no idea about before. Going to
-                            class is like going to a Party.
-                            And everything is always clear and understandable.
-                            Julia is really valuable teacher who is worth looking for! 🥰"</div>
-                    </div>
-                </div>
+                <button class="slider-btn next-btn">→</button>
             </div><!-- /.clients -->
 
         </div><!-- /.container -->
@@ -239,7 +261,7 @@
 
     <section class="section" class="FAQ" id="FAQ">
         <div class="container">
-            <h2 class="section__title">FAQ</h2>
+            <h2 class="section__title" data-aos="fade-up" data-aos-duration="1000">FAQ</h2>
 
 
 

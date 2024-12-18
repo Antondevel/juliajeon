@@ -1,72 +1,114 @@
-@media (max-width: 1024px) {
-	.section--about {
-		min-height: 50vh;
+@media (max-width: 1280px) {
 
+	.ellipse {
+		display: inline-block;
+		position: absolute;
+		border: 33px solid #FDA300;
+		border-radius: 50%;
+		padding: 5px;
+		width: 420px;
+		height: 420px;
+		top: 13%;
+		left: 0%;
 	}
 
+
+
+
+
+
+}
+
+@media (max-width: 1024px) {
+
+	/* Секции с минимальной высотой */
+	.section--about,
 	.section--clients {
 		min-height: 50vh;
-
 	}
 
+	/* Для блока header-content */
 	.header-content {
-		margin-bottom: 0px;
+		margin-bottom: 0;
+		margin-top: 0;
+		/* Добавил сброс верхнего отступа для унификации */
 	}
 
-	.header-heading {
-		text-align: center;
-	}
-
+	/* Выравнивание текста заголовков */
+	.header-heading,
 	.header-heading p {
 		text-align: center;
-
-
 	}
 
-	.nav.open .nav-list {
+	/* Адаптивное бургер-меню */
 
-		left: 60%;
-	}
-
-
-
-	.nav-list {
-		display: none;
-	}
-
-	.nav-button {
-		display: block;
-	}
-
-	.nav.open .nav-list {
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		left: 60%;
-		right: 0;
-		background-color: #000000;
-
-		z-index: 1;
-		padding: 80px 30px;
+	.nav__burger {
 		display: flex;
 		flex-direction: column;
+		cursor: pointer;
+	}
+
+	/* Стили для линий бургер-меню */
+	.nav__burger-line {
+		width: 40px;
+		height: 3px;
+		background-color: #fff;
+		margin: 4px 0;
+		transition: all 0.3s ease;
+	}
+
+	/* Активное состояние меню (при открытии) */
+
+
+	.nav-list.active {
+		opacity: 1;
+		visibility: visible;
+		/* Видимость становится true */
+		transform: translateX(0);
+		/* Меню двигается вниз */
+		transition: opacity 0.5s ease-in-out, visibility 0s 0s, transform 0.5s ease-in-out;
+	}
+
+	/* Скрытие навигации по умолчанию */
+	.nav-list {
+		width: 100%;
 		text-align: center;
-		row-gap: 40px;
-
-		font-size: 24px;
-		font-weight: 600;
-		transition: left 0.3s ease;
-		box-shadow: 0 10px 20px rgba(28, 28, 28, 0.8);
+		display: flex;
+		/* Меню всегда будет занимать место */
+		flex-direction: column;
+		gap: 15px;
+		position: absolute;
+		top: 100%;
+		right: 0;
+		background-color: #160f1c;
+		padding: 20px;
+		border-radius: 8px;
+		z-index: 1000;
+		opacity: 0;
+		visibility: hidden;
+		/* Изначально скрыто */
+		transform: translateX(100%);
+		/* Начальная позиция (вверх) */
+		transition: opacity 0.5s ease-in-out, visibility 0s 0.5s, transform 0.5s ease-in-out;
+		/* Плавное появление и анимация перемещения */
 	}
 
-	.nav-link {
-		color: #ffffff;
+
+
+	/* Анимация для бургер-меню */
+	.nav__burger.open .nav__burger-line:nth-child(1) {
+		transform: rotate(45deg) translate(5px, 5px);
 	}
 
-	.nav-link.active {
-		color: #FDA300;
+	.nav__burger.open .nav__burger-line:nth-child(2) {
+		opacity: 0;
 	}
 
+	.nav__burger.open .nav__burger-line:nth-child(3) {
+		transform: rotate(-45deg) translate(11px, -11px);
+	}
+
+	/* Кнопка для закрытия меню (иконка) */
 	.nav-button {
 		position: absolute;
 		z-index: 9;
@@ -76,36 +118,59 @@
 
 	.nav-button img {
 		filter: brightness(0) invert(1);
-		/* Применяет эффект инверсии, чтобы сделать цвет белым */
+		/* Инвертирует цвета, делая иконки белыми */
 		width: 25px;
 	}
 
-	.nav.open .nav-button {
+	/* Позиционирование меню при открытии (когда класс "open") */
+	.nav.open .nav-list {
 		position: fixed;
-	}
-
-	.header-nav {
-		margin-bottom: 50px;
-
-	}
-
-
-	.header-content {
-		margin-top: 0;
-	}
-
-	.header-content p {
-
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: #160f1c;
+		z-index: 1;
+		padding: 80px 30px;
+		display: flex;
+		flex-direction: column;
 		text-align: center;
+		row-gap: 40px;
+		font-size: 24px;
+		font-weight: 600;
+		transition: left 0.3s ease;
+		box-shadow: 0 10px 20px rgba(28, 28, 28, 0.8);
 	}
 
-	.header-img {
-		text-align: center;
+	.nav-link {
+		color: #ffffff;
+		text-decoration: none;
 	}
 
+	/* Активная ссылка навигации */
+	.nav-link.active {
+		color: #FDA300;
+	}
 
+	/* Адаптация секции About */
 	#about {
 		min-height: 60vh;
+	}
+
+	/* Стили для блока клиентов */
+	.clients__item {
+		width: 99%;
+		padding-left: 10%;
+	}
+
+	/* Отступы для header-nav */
+	.header-nav {
+		margin-bottom: 50px;
+	}
+
+	/* Для блока header-img */
+	.header-img {
+		text-align: center;
 	}
 }
 
@@ -124,15 +189,18 @@
 		row-gap: 27px;
 		font-size: 16px;
 	}
+
+	.clients__item {
+		width: 98%;
+		padding-right: 10%;
+	}
 }
-
-
 
 @media (max-width: 700px) {
 
 
 
-	.nav-button img {
+	/* .nav-button img {
 
 		width: 25px;
 	}
@@ -140,7 +208,9 @@
 	.nav.open .nav-list {
 		font-size: 18px;
 		row-gap: 26px;
-	}
+	} */
+
+
 
 	.header-heading {
 		font-size: 34px;
@@ -183,13 +253,30 @@
 	}
 
 	.clients__item {
-		width: 100%;
-		padding-right: 0;
+		width: 98%;
+		display: block;
+
 	}
 
 	.clients__item:last-child {
 		margin-bottom: 0;
 	}
+
+	.clients-slider {
+
+		width: 96%;
+	}
+
+
+
+	.clients__photo {
+		align-self: center;
+	}
+
+	.clients__content {
+		align-self: center;
+	}
+
 
 
 
@@ -219,22 +306,47 @@
 
 }
 
-
-
-
 @media (max-width: 500px) {
+	.container {
+		padding: 0 10px;
+	}
 
 
 
-
+	.ellipse {
+		display: inline-block;
+		position: absolute;
+		border: 33px solid #FDA300;
+		border-radius: 50%;
+		padding: 5px;
+		width: 375px;
+		height: 375px;
+		top: 16%;
+		left: 8%;
+	}
 
 	.clients__photo {
 		position: static;
 	}
 
+	.text {
+		padding: 15px;
+	}
+
+	.clients-slider {
+		padding-right: 18px;
+	}
+
 	.clients__item {
+		width: 99%;
 		padding-left: 0;
+		padding-right: 0;
 		text-align: center;
+	}
+
+	.slider-btn {
+		width: 60px;
+		height: 60px;
 	}
 
 	.clients__text:before {
@@ -243,6 +355,8 @@
 
 	.clients__name {
 		margin-top: 18px;
+		padding-left: 0;
+		text-align: center;
 	}
 
 
@@ -262,5 +376,40 @@
 
 	.accordion-header .arrow {
 		margin-left: 10px;
+	}
+}
+
+@media (max-width: 430px) {
+
+	.ellipse {
+
+		left: 5%;
+	}
+
+	.clients__item {
+		width: 100%;
+	}
+}
+
+@media (max-width: 414px) {
+
+	.ellipse {
+
+		width: 345px;
+		height: 345px;
+		top: 16%;
+		left: 9%;
+	}
+
+	.clients__item {
+		width: 100%;
+	}
+}
+
+@media (max-width: 390px) {
+	.ellipse {
+
+
+		left: 3%;
 	}
 }
