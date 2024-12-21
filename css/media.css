@@ -382,6 +382,9 @@
 }
 
 @media (max-width: 430px) {
+	.julia-pic{
+	padding-right: 7%
+	}
 
 	.ellipse {
 
