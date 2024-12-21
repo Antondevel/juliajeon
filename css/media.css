@@ -9,8 +9,9 @@
 		width: 420px;
 		height: 420px;
 		top: 13%;
-		left: 0%;
+		left: 3%;
 	}
+
 
 
 
@@ -61,6 +62,7 @@
 
 
 	.nav-list.active {
+		font-size: 25px;
 		opacity: 1;
 		visibility: visible;
 		/* Видимость становится true */
@@ -71,12 +73,13 @@
 
 	/* Скрытие навигации по умолчанию */
 	.nav-list {
+		font-size: 25px;
 		width: 100%;
 		text-align: center;
 		display: flex;
 		/* Меню всегда будет занимать место */
 		flex-direction: column;
-		gap: 15px;
+		gap: 30px;
 		position: absolute;
 		top: 100%;
 		right: 0;
@@ -171,6 +174,11 @@
 	/* Для блока header-img */
 	.header-img {
 		text-align: center;
+	}
+
+	.julia-pic {
+
+		padding-right: 8%;
 	}
 }
 
