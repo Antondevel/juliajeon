@@ -324,12 +324,7 @@
 		padding: 0 10px;
 	}
 
-	.flag {
-		max-width: 128%;
-		height: 61%;
-		top: 0%;
-		left: -97%;
-	}
+
 
 	.clients__photo {
 		position: static;
@@ -387,8 +382,11 @@
 	}
 
 	.bg-faq {
-
 		bottom: 0;
+
+		width: 79%;
+		height: 40vh;
+
 	}
 
 	.clients-bg-img {
@@ -421,10 +419,7 @@
 }
 
 @media (max-width: 430px) {
-	.bg-faq {
 
-		top: 0;
-	}
 
 
 	.clients__item {
