@@ -1,25 +1,35 @@
 @media (max-width: 1280px) {
-
-	.ellipse {
+	.buiding {
 		display: inline-block;
 		position: absolute;
-		border: 33px solid #FDA300;
-		border-radius: 50%;
-		padding: 5px;
-		width: 420px;
-		height: 420px;
-		top: 13%;
-		left: 0%;
+		z-index: 2;
+		opacity: 7%;
+		max-width: 100%;
+		height: 107%;
+		top: -44px;
+		left: -30%;
+		border-radius: 52%;
 	}
 
+	.clients-bg-img {
+		position: absolute;
+		opacity: 13%;
+		width: 40%;
+		right: 0;
+		top: -37px;
+	}
 
-
-
-
-
+	.bg-faq {
+		position: absolute;
+		opacity: 10%;
+		width: 58%;
+		height: 65vh;
+		object-fit: cover;
+	}
 }
 
 @media (max-width: 1024px) {
+
 
 	/* Секции с минимальной высотой */
 	.section--about,
@@ -61,6 +71,7 @@
 
 
 	.nav-list.active {
+
 		font-size: 25px;
 		opacity: 1;
 		visibility: visible;
@@ -94,7 +105,6 @@
 		transition: opacity 0.5s ease-in-out, visibility 0s 0.5s, transform 0.5s ease-in-out;
 		/* Плавное появление и анимация перемещения */
 	}
-
 
 
 	/* Анимация для бургер-меню */
@@ -177,6 +187,9 @@
 }
 
 @media (max-width: 980px) {
+
+
+
 	.header-heading {
 		margin-top: 50px;
 	}
@@ -185,6 +198,7 @@
 	.header-row {
 		display: flex;
 		flex-wrap: wrap;
+
 	}
 
 	.nav.open .nav-list {
@@ -196,23 +210,21 @@
 		width: 98%;
 		padding-right: 10%;
 	}
+
+	.bg-sakura-header {
+
+		left: -160px;
+
+	}
 }
 
+@media (max-width: 768px) {}
+
 @media (max-width: 700px) {
+	.flag {
 
-
-
-	/* .nav-button img {
-
-		width: 25px;
+		top: -15%;
 	}
-
-	.nav.open .nav-list {
-		font-size: 18px;
-		row-gap: 26px;
-	} */
-
-
 
 	.header-heading {
 		font-size: 34px;
@@ -269,8 +281,6 @@
 		width: 96%;
 	}
 
-
-
 	.clients__photo {
 		align-self: center;
 	}
@@ -278,9 +288,6 @@
 	.clients__content {
 		align-self: center;
 	}
-
-
-
 
 
 	/* Footer */
@@ -305,26 +312,23 @@
 		margin-bottom: 20px;
 	}
 
-
 }
 
 @media (max-width: 500px) {
+	body {
+
+		overflow-x: hidden;
+	}
+
 	.container {
 		padding: 0 10px;
 	}
 
-
-
-	.ellipse {
-		display: inline-block;
-		position: absolute;
-		border: 33px solid #FDA300;
-		border-radius: 50%;
-		padding: 5px;
-		width: 375px;
-		height: 375px;
-		top: 16%;
-		left: 8%;
+	.flag {
+		max-width: 128%;
+		height: 61%;
+		top: 0%;
+		left: -97%;
 	}
 
 	.clients__photo {
@@ -361,8 +365,6 @@
 		text-align: center;
 	}
 
-
-
 	.contacts {
 		padding: 90px 0;
 	}
@@ -379,17 +381,51 @@
 	.accordion-header .arrow {
 		margin-left: 10px;
 	}
+
+	#FAQ {
+		position: relative;
+	}
+
+	.bg-faq {
+
+		bottom: 0;
+	}
+
+	.clients-bg-img {
+
+
+		width: 63%;
+		right: 0;
+		top: 1px;
+	}
+
+	.header-bg-bird {
+
+		left: 1%;
+
+	}
+
+	.bg-sakura-header {
+		left: -75px;
+	}
+
+	.header-bg-korea {
+		max-width: 181%;
+		height: 132%;
+		top: -18%;
+		left: -28%;
+
+	}
+
+
 }
 
 @media (max-width: 430px) {
-	.julia-pic{
-	padding-right: 7%
+	.bg-faq {
+
+		top: 0;
 	}
 
-	.ellipse {
-
-		left: 5%;
-	}
 
 	.clients__item {
 		width: 100%;
@@ -398,23 +434,9 @@
 
 @media (max-width: 414px) {
 
-	.ellipse {
-
-		width: 345px;
-		height: 345px;
-		top: 16%;
-		left: 9%;
-	}
-
 	.clients__item {
 		width: 100%;
 	}
 }
 
-@media (max-width: 390px) {
-	.ellipse {
-
-
-		left: 3%;
-	}
-}
+@media (max-width: 390px) {}
