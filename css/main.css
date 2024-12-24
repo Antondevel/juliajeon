@@ -9,8 +9,8 @@ html {
 body {
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
-
     font-size: 14px;
+
 }
 
 html,
@@ -30,7 +30,6 @@ body {
     /* Отступ сверху и снизу */
     min-height: 100vh;
     /* Высота секции */
-
 
 }
 
@@ -87,10 +86,6 @@ body {
     margin-bottom: 20px;
 }
 
-
-
-
-
 .section p {
 
     /* Центрирование текста */
@@ -124,32 +119,35 @@ body {
 .btn {
     display: inline-block;
     padding: 7px 22px;
-    background-color: #070707;
+    background-color: #160f1c;
     border-radius: 30px;
     font-size: 18px;
     color: #fff;
-    transition: background-color 0.2s ease-in, top 0.2s ease-in;
+    transition: transform 0.3s ease;
 }
 
 .btn:hover,
 .btn:focus {
-    background-color: #323232;
+    background-color: #271c31;
+    transform: scale(1.1);
 }
 
 .btn:active {
     position: relative;
     top: 1px;
-    background-color: #000000;
+    background-color: #160f1c;
 }
 
 /* Header */
 .header {
     padding-top: 0;
     background-color: #160f1c;
+    overflow: hidden;
 
 
 
 }
+
 
 .header-nav {
     display: flex;
@@ -178,6 +176,7 @@ body {
 .body-content {
     padding-top: 80px;
     /* Отступ сверху для основного контента */
+
 }
 
 
@@ -273,6 +272,7 @@ body {
     /* Сдвинут влево (для текста) */
     transition: opacity 0.5s ease, transform 0.5s ease;
     /* Плавный переход */
+    z-index: 10;
 }
 
 .header-content.visible {
@@ -322,7 +322,7 @@ body {
     transition: opacity 0.5s ease, transform 0.5s ease;
     /* Плавный переход */
 
-    filter: drop-shadow(10px 10px 100px rgba(60, 60, 60, 0.5));
+    /* filter: drop-shadow(10px 10px 100px rgba(60, 60, 60, 0.5)); */
 }
 
 .julia-pic {
@@ -331,16 +331,58 @@ body {
 
 }
 
-.ellipse {
+
+.buiding {
     display: inline-block;
     position: absolute;
-    border: 33px solid #FDA300;
-    border-radius: 50%;
-    padding: 5px;
-    width: 360px;
-    height: 360px;
-    top: 100px;
-    left: 25px;
+    z-index: 2;
+    opacity: 7%;
+    max-width: 200%;
+    height: 144%;
+    top: -44px;
+    left: -30%;
+    border-radius: 52%;
+}
+
+.header-bg-korea {
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    opacity: 13%;
+    max-width: 225%;
+    height: 136%;
+    top: -22%;
+    left: -34%;
+    border-radius: 1%;
+}
+
+.header-bg-bird {
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    opacity: 9%;
+    max-width: 119%;
+    height: 65%;
+    top: -22%;
+    left: 82%;
+    border-radius: 1%;
+}
+
+.bg-sakura-header {
+
+    position: absolute;
+    left: -263px;
+    top: -65px;
+    opacity: 9%;
+
+}
+
+.bg-faq {
+    position: absolute;
+    opacity: 10%;
+    width: 39%;
+    height: 96vh;
+    object-fit: cover;
 }
 
 .header-img.visible {
@@ -351,8 +393,6 @@ body {
 }
 
 /* About */
-
-
 
 .text {
     font-size: 20px;
@@ -379,10 +419,14 @@ body {
     visibility: visible;
 }
 
-
-
-
 /* Reviews */
+.clients-bg-img {
+    position: absolute;
+    opacity: 13%;
+    width: 30%;
+    right: 0;
+    top: 0;
+}
 
 .clients-slider-wrapper {
     position: relative;
@@ -482,20 +526,19 @@ body {
 }
 
 .section--clients {
+    position: relative;
     padding: 60px 0;
     color: #ffffff;
 }
 
-
-
-
-
-
 /* FAQ */
 .accordion {
+    position: relative;
     padding-top: 60px;
     max-width: 800px;
     margin: 0 auto;
+
+
 }
 
 .accordion-item {
@@ -564,20 +607,35 @@ body {
     margin: 0;
 }
 
-
-
 /* Footer */
+
 .contacts {
+    position: relative;
     background: antiquewhite;
     padding: 90px 0;
     text-align: center;
     /* padding-bottom: 150px; */
     /* Увеличен нижний отступ для лучшей прокрутки */
+    z-index: 100;
+}
+
+
+.footer-bg-korea {
+    position: absolute;
+    opacity: 6%;
+    width: 100%;
+    height: 100%;
+    bottom: 0%;
+    left: 0%;
+
+    object-fit: cover;
 }
 
 .contacts-title {
+    position: relative;
     margin-bottom: 40px;
     color: #160f1c;
+    z-index: 100;
 }
 
 .contacts-content {
@@ -602,18 +660,26 @@ body {
     filter: invert(100%) sepia(8%) saturate(341%) hue-rotate(10deg) brightness(96%) contrast(87%);
 }
 
-
-
 .contacts-social {
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 60px;
     margin-bottom: 40px;
+    transition: transform 0.3s ease;
 }
 
+.contacts-social img {
 
 
+    transition: transform 0.3s ease;
+}
+
+.contacts-social img:hover {
+    transform: scale(1.2);
+    /* Увеличение на 20% */
+
+}
 
 .contacts-footer {
     color: #828282;
@@ -621,6 +687,7 @@ body {
 
 #footer a {
     color: antiquewhite;
+
 }
 
 
