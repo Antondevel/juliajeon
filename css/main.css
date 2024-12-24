@@ -319,10 +319,10 @@ body {
     position: absolute;
     z-index: 2;
     opacity: 13%;
-    max-width: 225%;
-    height: 136%;
-    top: -22%;
-    left: -34%;
+    max-width: 245%;
+    height: 165%;
+    top: -48%;
+    left: -54%;
     border-radius: 1%;
 }
 
