@@ -27,7 +27,6 @@
 		object-fit: cover;
 	}
 }
-
 @media (max-width: 1024px) {
 
 
@@ -66,10 +65,7 @@
 		margin: 4px 0;
 		transition: all 0.3s ease;
 	}
-
 	/* Активное состояние меню (при открытии) */
-
-
 	.nav-list.active {
 
 		font-size: 25px;
@@ -106,7 +102,6 @@
 		/* Плавное появление и анимация перемещения */
 	}
 
-
 	/* Анимация для бургер-меню */
 	.nav__burger.open .nav__burger-line:nth-child(1) {
 		transform: rotate(45deg) translate(5px, 5px);
@@ -127,7 +122,6 @@
 		top: 20px;
 		right: 30px;
 	}
-
 	.nav-button img {
 		filter: brightness(0) invert(1);
 		/* Инвертирует цвета, делая иконки белыми */
@@ -153,52 +147,40 @@
 		transition: left 0.3s ease;
 		box-shadow: 0 10px 20px rgba(28, 28, 28, 0.8);
 	}
-
 	.nav-link {
 		color: #ffffff;
 		text-decoration: none;
 	}
-
 	/* Активная ссылка навигации */
 	.nav-link.active {
 		color: #FDA300;
 	}
-
 	/* Адаптация секции About */
 	#about {
 		min-height: 60vh;
 	}
-
 	/* Стили для блока клиентов */
 	.clients__item {
 		width: 99%;
 		padding-left: 10%;
 	}
-
 	/* Отступы для header-nav */
 	.header-nav {
 		margin-bottom: 50px;
 	}
-
 	/* Для блока header-img */
 	.header-img {
 		text-align: center;
 	}
 }
-
 @media (max-width: 980px) {
-
-
 
 	.header-heading {
 		margin-top: 50px;
 	}
-
-
 	.header-row {
 		display: flex;
 		flex-wrap: wrap;
-
 	}
 
 	.nav.open .nav-list {
@@ -210,21 +192,13 @@
 		width: 98%;
 		padding-right: 10%;
 	}
-
 	.bg-sakura-header {
-
 		left: -160px;
-
 	}
 }
 
-@media (max-width: 768px) {}
-
 @media (max-width: 700px) {
-	.flag {
 
-		top: -15%;
-	}
 
 	.header-heading {
 		font-size: 34px;
@@ -289,7 +263,6 @@
 		align-self: center;
 	}
 
-
 	/* Footer */
 	.contacts {
 		padding: 90px 0;
@@ -324,10 +297,15 @@
 		padding: 0 10px;
 	}
 
-
-
 	.clients__photo {
 		position: static;
+	}
+
+	.buiding {
+		max-width: 100%;
+		height: 80%;
+		top: 111px;
+		left: -46%;
 	}
 
 	.text {
@@ -372,7 +350,6 @@
 		text-align: center;
 
 	}
-
 	.accordion-header .arrow {
 		margin-left: 10px;
 	}
@@ -383,15 +360,11 @@
 
 	.bg-faq {
 		bottom: 0;
-
 		width: 79%;
 		height: 40vh;
-
 	}
 
 	.clients-bg-img {
-
-
 		width: 63%;
 		right: 0;
 		top: 1px;
@@ -400,7 +373,6 @@
 	.header-bg-bird {
 
 		left: 1%;
-
 	}
 
 	.bg-sakura-header {
@@ -412,26 +384,17 @@
 		height: 132%;
 		top: -18%;
 		left: -28%;
-
 	}
 
-
 }
-
 @media (max-width: 430px) {
 
-
-
 	.clients__item {
 		width: 100%;
 	}
 }
-
 @media (max-width: 414px) {
-
 	.clients__item {
 		width: 100%;
 	}
 }
-
-@media (max-width: 390px) {}
