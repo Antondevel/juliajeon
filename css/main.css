@@ -21,13 +21,15 @@ body {
 
 /* Общие стили для секций */
 .section {
-    background-color: #160f1c;
+    background-color: #18101e;
+    ;
     /* Цвет фона для секции */
     padding: 25px 0;
     /* Отступ сверху и снизу */
     min-height: 100vh;
     /* Высота секции */
 }
+
 .section__title {
     font-size: 38px;
     /* Размер шрифта заголовка */
@@ -56,14 +58,17 @@ body {
     transform: translateY(0);
     /* Возвращаем в исходное положение */
 }
+
 .section--about {
     text-align: center;
 }
+
 .section--about {
     position: relative;
     padding: 60px 20px;
     color: #fff;
 }
+
 .section__title {
     text-align: center;
     font-size: 2.5rem;
@@ -127,6 +132,7 @@ body {
     background-color: #160f1c;
     overflow: hidden;
 }
+
 .header-nav {
     display: flex;
     justify-content: space-between;
@@ -150,10 +156,12 @@ body {
     box-shadow: 0 1px 9px rgba(65, 65, 65, 0.1);
     /* Добавляем тень */
 }
+
 .body-content {
     padding-top: 80px;
     /* Отступ сверху для основного контента */
 }
+
 .logo {
     position: relative;
     padding: 0 12px 3px 0;
@@ -186,6 +194,7 @@ body {
     padding-bottom: 8px;
     background-color: #160f1c;
 }
+
 .nav__burger {
     display: none;
     flex-direction: column;
@@ -228,6 +237,7 @@ body {
 
     padding-top: 10%;
 }
+
 .header-content {
     margin-bottom: 200px;
     /* Убрал отрицательное значение */
@@ -249,26 +259,32 @@ body {
     transform: translateX(0);
     /* Вернуть в исходное положение */
 }
+
 .header-heading {
     /* margin-bottom: 10px; */
     font-weight: 700;
     font-size: 70px;
 }
+
 .header-heading span {
     color: #FDA300;
 }
+
 .header-heading p {
     text-align: center;
 }
+
 .header-content p {
     line-height: 2;
     font-size: 18px;
     padding-top: 25px;
 }
+
 .header-content span {
     display: block;
     font-size: 35px;
 }
+
 .header-img {
     width: 450px;
     /* Установи разумную ширину */
@@ -280,10 +296,12 @@ body {
     transition: opacity 0.5s ease, transform 0.5s ease;
     /* Плавный переход */
 }
+
 .julia-pic {
     position: relative;
     z-index: 100;
 }
+
 .buiding {
     display: inline-block;
     position: absolute;
@@ -342,6 +360,7 @@ body {
     transform: translateX(0);
     /* Вернуть в исходное положение */
 }
+
 /* About */
 
 .text {
@@ -354,6 +373,7 @@ body {
     /* Полупрозрачный черный фон */
     border-radius: 15px;
 }
+
 /* Скрываем текст до активации */
 .fade-in-text {
     opacity: 0;
@@ -361,11 +381,13 @@ body {
     transition: opacity 1.5s ease, transform 1.5s ease;
     visibility: hidden;
 }
+
 .fade-in-text.visible {
     opacity: 1;
     transform: translateY(0);
     visibility: visible;
 }
+
 /* Reviews */
 .clients-bg-img {
     position: absolute;
@@ -389,6 +411,7 @@ body {
     /* Плавное прокручивание */
     width: 100%;
 }
+
 .clients__item {
     display: flex;
     flex: none;
@@ -405,6 +428,7 @@ body {
     /* Это гарантирует, что содержимое слайда не выйдет за его пределы */
     padding-left: 10%;
 }
+
 .clients__photo {
     width: 200px;
     height: 250px;
@@ -462,6 +486,7 @@ body {
 .next-btn {
     right: 30px;
 }
+
 .prev-btn:hover,
 .next-btn:hover {
     background-color: #d48700;
@@ -480,6 +505,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
 }
+
 .accordion-item {
     margin-bottom: 10px;
     border: 1px solid #FDA300;
@@ -533,10 +559,12 @@ body {
     transition: max-height 0.5s ease;
     /* Плавное изменение высоты */
 }
+
 .accordion-item.active .accordion-content {
     max-height: 500px;
     /* Устанавливаем максимально возможную высоту (достаточно большую) */
 }
+
 .accordion-content p {
     padding: 10px 0;
     margin: 0;
@@ -552,6 +580,7 @@ body {
     /* Увеличен нижний отступ для лучшей прокрутки */
     z-index: 100;
 }
+
 .footer-bg-korea {
     position: absolute;
     opacity: 6%;
@@ -561,12 +590,14 @@ body {
     left: 0%;
     object-fit: cover;
 }
+
 .contacts-title {
     position: relative;
     margin-bottom: 40px;
     color: #160f1c;
     z-index: 100;
 }
+
 .contacts-content {
     margin: 0 auto 40px;
     max-width: 480px;
@@ -581,10 +612,12 @@ body {
 .contacts-button {
     margin-bottom: 80px;
 }
+
 .contacts-button img {
     width: 20px;
     filter: invert(100%) sepia(8%) saturate(341%) hue-rotate(10deg) brightness(96%) contrast(87%);
 }
+
 .contacts-social {
     display: flex;
     justify-content: center;
@@ -597,10 +630,12 @@ body {
 .contacts-social img {
     transition: transform 0.3s ease;
 }
+
 .contacts-social img:hover {
     transform: scale(1.2);
     /* Увеличение на 20% */
 }
+
 .contacts-footer {
     color: #828282;
 }
@@ -608,6 +643,7 @@ body {
 #footer a {
     color: antiquewhite;
 }
+
 .language-switcher {
     color: #ffffff;
 }
