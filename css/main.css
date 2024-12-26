@@ -1,5 +1,4 @@
 @import "./reset.css";
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 
 html {
@@ -9,7 +8,6 @@ html {
 body {
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
-
     font-size: 14px;
 }
 
@@ -19,21 +17,18 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-
 }
 
 /* Общие стили для секций */
 .section {
-    background-color: #160f1c;
+    background-color: #18101e;
+    ;
     /* Цвет фона для секции */
     padding: 25px 0;
     /* Отступ сверху и снизу */
-    min-height: 100vh;
+    min-height: 50vh;
     /* Высота секции */
-
-
 }
-
 
 .section__title {
     font-size: 38px;
@@ -48,8 +43,6 @@ body {
     /* Отступ снизу заголовка */
     text-align: center;
     /* Центрирование заголовка */
-
-
     opacity: 0;
     /* Заголовок изначально невидим */
     transform: translateY(50px);
@@ -59,8 +52,6 @@ body {
 }
 
 /* Добавляем анимацию для заголовка */
-
-
 .section__title.visible {
     opacity: 1;
     /* Показываем заголовок */
@@ -70,14 +61,11 @@ body {
 
 .section--about {
     text-align: center;
-
 }
 
 .section--about {
     position: relative;
     padding: 60px 20px;
-
-
     color: #fff;
 }
 
@@ -86,10 +74,6 @@ body {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
-
-
-
-
 
 .section p {
 
@@ -107,7 +91,6 @@ body {
 }
 
 /* -- */
-
 .container {
 
     width: 100%;
@@ -124,31 +107,30 @@ body {
 .btn {
     display: inline-block;
     padding: 7px 22px;
-    background-color: #070707;
+    background-color: #160f1c;
     border-radius: 30px;
     font-size: 18px;
     color: #fff;
-    transition: background-color 0.2s ease-in, top 0.2s ease-in;
+    transition: transform 0.3s ease;
 }
 
 .btn:hover,
 .btn:focus {
-    background-color: #323232;
+    background-color: #271c31;
+    transform: scale(1.1);
 }
 
 .btn:active {
     position: relative;
     top: 1px;
-    background-color: #000000;
+    background-color: #160f1c;
 }
 
 /* Header */
 .header {
     padding-top: 0;
     background-color: #160f1c;
-
-
-
+    overflow: hidden;
 }
 
 .header-nav {
@@ -179,7 +161,6 @@ body {
     padding-top: 80px;
     /* Отступ сверху для основного контента */
 }
-
 
 .logo {
     position: relative;
@@ -213,7 +194,6 @@ body {
     padding-bottom: 8px;
     background-color: #160f1c;
 }
-
 
 .nav__burger {
     display: none;
@@ -249,7 +229,6 @@ body {
     color: #d48700;
 }
 
-
 /* Header content */
 .header-row {
     display: flex;
@@ -257,8 +236,6 @@ body {
     align-items: center;
 
     padding-top: 10%;
-
-
 }
 
 .header-content {
@@ -273,6 +250,7 @@ body {
     /* Сдвинут влево (для текста) */
     transition: opacity 0.5s ease, transform 0.5s ease;
     /* Плавный переход */
+    z-index: 10;
 }
 
 .header-content.visible {
@@ -286,18 +264,14 @@ body {
     /* margin-bottom: 10px; */
     font-weight: 700;
     font-size: 70px;
-
 }
 
 .header-heading span {
     color: #FDA300;
-
 }
 
 .header-heading p {
     text-align: center;
-
-
 }
 
 .header-content p {
@@ -321,26 +295,65 @@ body {
     /* Сдвинут вправо (для изображения) */
     transition: opacity 0.5s ease, transform 0.5s ease;
     /* Плавный переход */
-
-    filter: drop-shadow(10px 10px 100px rgba(60, 60, 60, 0.5));
 }
 
 .julia-pic {
     position: relative;
     z-index: 100;
-
+    left: 15%;
 }
 
-.ellipse {
+.buiding {
     display: inline-block;
     position: absolute;
-    border: 33px solid #FDA300;
-    border-radius: 50%;
-    padding: 5px;
-    width: 360px;
-    height: 360px;
-    top: 100px;
-    left: 7%;
+    z-index: 2;
+    opacity: 7%;
+    max-width: 95%;
+    height: 108%;
+    top: 109px;
+    left: -19%;
+    border-radius: 52%;
+}
+
+.header-bg-korea {
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    opacity: 19%;
+    max-width: 146%;
+    height: 85%;
+    top: 4%;
+    left: 13%;
+    border-radius: 70%;
+}
+
+.header-bg-bird {
+    display: inline-block;
+    position: absolute;
+    z-index: 13;
+    opacity: 53%;
+    max-width: 119%;
+    height: 65%;
+    top: -22%;
+    left: 100%;
+}
+
+.bg-sakura-header {
+    position: absolute;
+    left: -72%;
+    top: -75px;
+    opacity: 6%;
+    width: 65%;
+    height: 137%;
+}
+
+.bg-faq {
+    position: absolute;
+    opacity: 10%;
+    width: 20%;
+    height: 65vh;
+    object-fit: cover;
+
 }
 
 .header-img.visible {
@@ -351,8 +364,6 @@ body {
 }
 
 /* About */
-
-
 
 .text {
     font-size: 20px;
@@ -379,10 +390,14 @@ body {
     visibility: visible;
 }
 
-
-
-
 /* Reviews */
+.clients-bg-img {
+    position: absolute;
+    opacity: 13%;
+    width: 30%;
+    right: 0;
+    top: 0;
+}
 
 .clients-slider-wrapper {
     position: relative;
@@ -461,11 +476,9 @@ body {
     cursor: pointer;
     border-radius: 50%;
     z-index: 10;
-
     width: 50px;
     height: 50px;
     opacity: 50%;
-
 }
 
 .prev-btn {
@@ -482,18 +495,20 @@ body {
 }
 
 .section--clients {
+    position: relative;
     padding: 60px 0;
     color: #ffffff;
 }
 
-
-
-
-
-
 /* FAQ */
+#FAQ {
+    position: relative;
+}
+
 .accordion {
+    position: relative;
     padding-top: 60px;
+    padding-bottom: 80px;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -559,25 +574,35 @@ body {
 
 .accordion-content p {
     padding: 10px 0;
-
-
     margin: 0;
 }
 
-
-
 /* Footer */
 .contacts {
+    position: relative;
     background: antiquewhite;
     padding: 90px 0;
     text-align: center;
     /* padding-bottom: 150px; */
     /* Увеличен нижний отступ для лучшей прокрутки */
+    z-index: 100;
+}
+
+.footer-bg-korea {
+    position: absolute;
+    opacity: 6%;
+    width: 100%;
+    height: 100%;
+    bottom: 0%;
+    left: 0%;
+    object-fit: cover;
 }
 
 .contacts-title {
+    position: relative;
     margin-bottom: 40px;
     color: #160f1c;
+    z-index: 100;
 }
 
 .contacts-content {
@@ -593,8 +618,6 @@ body {
 
 .contacts-button {
     margin-bottom: 80px;
-
-
 }
 
 .contacts-button img {
@@ -602,18 +625,23 @@ body {
     filter: invert(100%) sepia(8%) saturate(341%) hue-rotate(10deg) brightness(96%) contrast(87%);
 }
 
-
-
 .contacts-social {
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 60px;
     margin-bottom: 40px;
+    transition: transform 0.3s ease;
 }
 
+.contacts-social img {
+    transition: transform 0.3s ease;
+}
 
-
+.contacts-social img:hover {
+    transform: scale(1.2);
+    /* Увеличение на 20% */
+}
 
 .contacts-footer {
     color: #828282;
@@ -622,13 +650,6 @@ body {
 #footer a {
     color: antiquewhite;
 }
-
-
-
-
-
-
-
 
 .language-switcher {
     color: #ffffff;

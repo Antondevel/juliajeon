@@ -1,26 +1,50 @@
 @media (max-width: 1280px) {
-
-	.ellipse {
+	.buiding {
 		display: inline-block;
 		position: absolute;
-		border: 33px solid #FDA300;
-		border-radius: 50%;
-		padding: 5px;
-		width: 420px;
-		height: 420px;
-		top: 13%;
-		left: 3%;
+		z-index: 2;
+		opacity: 7%;
+		max-width: 100%;
+		height: 100%;
+		top: 152px;
+		left: -22%;
+		border-radius: 52%;
+	}
+
+	.clients-bg-img {
+		position: absolute;
+		opacity: 13%;
+		width: 40%;
+		right: 0;
+		top: -37px;
 	}
 
 
 
+	.bg-sakura-header {
+		position: absolute;
+		left: -40%;
+		top: -61px;
+		opacity: 20%;
+		width: 55%;
+		height: 98%;
+		opacity: 5%;
+	}
 
-
-
-
+	.bg-faq {
+		position: absolute;
+		opacity: 10%;
+		width: 39%;
+		height: 96vh;
+		object-fit: cover;
+	}
 }
 
 @media (max-width: 1024px) {
+	.section {
+		min-height: 50vh;
+	}
+
 
 	/* Секции с минимальной высотой */
 	.section--about,
@@ -59,9 +83,8 @@
 	}
 
 	/* Активное состояние меню (при открытии) */
-
-
 	.nav-list.active {
+
 		font-size: 25px;
 		opacity: 1;
 		visibility: visible;
@@ -95,8 +118,6 @@
 		transition: opacity 0.5s ease-in-out, visibility 0s 0.5s, transform 0.5s ease-in-out;
 		/* Плавное появление и анимация перемещения */
 	}
-
-
 
 	/* Анимация для бургер-меню */
 	.nav__burger.open .nav__burger-line:nth-child(1) {
@@ -176,17 +197,67 @@
 		text-align: center;
 	}
 
-	.julia-pic {
+	.accordion {
 
-		padding-right: 7%;
+		padding-bottom: 60px;
+
+	}
+
+	.bg-sakura-header {
+
+		left: -18%;
+		top: -160px;
+		opacity: 5%;
+		width: 48%;
+		height: 100%;
+	}
+
+	.header-bg-korea {
+
+
+		max-width: 120%;
+		height: 80%;
+		top: 4%;
+		left: 1%;
+
+	}
+
+	.julia-pic {
+		left: 0;
+	}
+
+	.header-bg-bird {
+
+		left: 80%;
+	}
+
+	.buiding {
+		display: inline-block;
+		position: absolute;
+		z-index: 2;
+		opacity: 12%;
+		max-width: 100%;
+		height: 95%;
+		top: 3px;
+		left: -23%;
+		border-radius: 52%;
+	}
+
+	.bg-faq {
+
+		opacity: 6%;
+		width: 40%;
+		height: 100%;
+		object-fit: cover;
+		bottom: 0;
 	}
 }
 
 @media (max-width: 980px) {
+
 	.header-heading {
 		margin-top: 50px;
 	}
-
 
 	.header-row {
 		display: flex;
@@ -202,22 +273,54 @@
 		width: 98%;
 		padding-right: 10%;
 	}
+
+	.bg-sakura-header {
+		left: -219px;
+		top: -23px;
+		width: 92%;
+		height: 145%;
+	}
+
+	.buiding {
+		display: inline-block;
+		position: absolute;
+		z-index: 2;
+		opacity: 12%;
+		max-width: 100%;
+		height: 95%;
+		top: 80px;
+		left: -25%;
+		border-radius: 52%;
+	}
+
+	.bg-faq {
+		position: absolute;
+		opacity: 10%;
+		width: 58%;
+		height: 76vh;
+		object-fit: cover;
+		bottom: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.buiding {
+		max-width: 88%;
+		height: 83%;
+		top: 80px;
+		left: -25%;
+
+	}
+
+	.bg-faq {
+
+		width: 56%;
+		height: 50vh;
+
+	}
 }
 
 @media (max-width: 700px) {
-
-
-
-	/* .nav-button img {
-
-		width: 25px;
-	}
-
-	.nav.open .nav-list {
-		font-size: 18px;
-		row-gap: 26px;
-	} */
-
 
 
 	.header-heading {
@@ -275,8 +378,6 @@
 		width: 96%;
 	}
 
-
-
 	.clients__photo {
 		align-self: center;
 	}
@@ -284,10 +385,6 @@
 	.clients__content {
 		align-self: center;
 	}
-
-
-
-
 
 	/* Footer */
 	.contacts {
@@ -311,30 +408,27 @@
 		margin-bottom: 20px;
 	}
 
-
 }
 
 @media (max-width: 500px) {
+	body {
+
+		overflow-x: hidden;
+	}
+
 	.container {
 		padding: 0 10px;
 	}
 
-
-
-	.ellipse {
-		display: inline-block;
-		position: absolute;
-		border: 33px solid #FDA300;
-		border-radius: 50%;
-		padding: 5px;
-		width: 375px;
-		height: 375px;
-		top: 16%;
-		left: 8%;
-	}
-
 	.clients__photo {
 		position: static;
+	}
+
+	.buiding {
+		max-width: 100%;
+		height: 80%;
+		top: 111px;
+		left: -46%;
 	}
 
 	.text {
@@ -367,8 +461,6 @@
 		text-align: center;
 	}
 
-
-
 	.contacts {
 		padding: 90px 0;
 	}
@@ -385,14 +477,55 @@
 	.accordion-header .arrow {
 		margin-left: 10px;
 	}
+
+	#FAQ {
+		position: relative;
+	}
+
+	.buiding {
+		max-width: 100%;
+		height: 58%;
+		top: 185px;
+		left: -46%;
+	}
+
+	.bg-faq {
+
+		width: 79%;
+		height: 15vh;
+	}
+
+	.clients-bg-img {
+		width: 63%;
+		right: 0;
+		top: 1px;
+	}
+
+	.header-bg-bird {
+
+
+		opacity: 53%;
+		max-width: 92%;
+		height: 46%;
+		top: -2%;
+		left: 1%;
+	}
+
+
+	.bg-sakura-header {
+		left: -75px;
+	}
+
+	.header-bg-korea {
+		max-width: 119%;
+		height: 70%;
+		top: 18%;
+		left: 1%;
+	}
+
 }
 
 @media (max-width: 430px) {
-
-	.ellipse {
-
-		left: 5%;
-	}
 
 	.clients__item {
 		width: 100%;
@@ -400,24 +533,7 @@
 }
 
 @media (max-width: 414px) {
-
-	.ellipse {
-
-		width: 345px;
-		height: 345px;
-		top: 16%;
-		left: 9%;
-	}
-
 	.clients__item {
 		width: 100%;
-	}
-}
-
-@media (max-width: 390px) {
-	.ellipse {
-
-
-		left: 3%;
 	}
 }
