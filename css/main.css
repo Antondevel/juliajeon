@@ -319,41 +319,32 @@ body {
     display: inline-block;
     position: absolute;
     z-index: 2;
-    opacity: 19%;
+    opacity: 30%;
     max-width: 146%;
-    height: 85%;
-    top: 4%;
-    left: 13%;
-    border-radius: 70%;
+    height: 156%;
+    top: -15%;
+    left: 7%;
+    filter: drop-shadow(0 6px 12px rgba(200, 180, 220, 0.4));
+
 }
 
-.header-bg-bird {
-    display: inline-block;
-    position: absolute;
-    z-index: 13;
-    opacity: 53%;
-    max-width: 119%;
-    height: 65%;
-    top: -22%;
-    left: 100%;
-}
 
 .bg-sakura-header {
     position: absolute;
-    left: -72%;
-    top: -75px;
+    left: -62%;
+    top: -51px;
     opacity: 6%;
-    width: 65%;
-    height: 137%;
+    width: 84%;
+    height: 192%;
 }
 
 .bg-faq {
     position: absolute;
     opacity: 10%;
-    width: 20%;
-    height: 65vh;
+    width: 36%;
+    height: 99vh;
     object-fit: cover;
-
+    left: -4rem;
 }
 
 .header-img.visible {

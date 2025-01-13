@@ -213,23 +213,17 @@
 	}
 
 	.header-bg-korea {
-
-
-		max-width: 120%;
-		height: 80%;
-		top: 4%;
-		left: 1%;
-
+		max-width: 136%;
+		height: 164%;
+		top: -11%;
+		left: -15%;
 	}
 
 	.julia-pic {
 		left: 0;
 	}
 
-	.header-bg-bird {
 
-		left: 80%;
-	}
 
 	.buiding {
 		display: inline-block;
@@ -501,26 +495,15 @@
 		top: 1px;
 	}
 
-	.header-bg-bird {
-
-
-		opacity: 53%;
-		max-width: 92%;
-		height: 46%;
-		top: -2%;
-		left: 1%;
-	}
-
-
 	.bg-sakura-header {
 		left: -75px;
 	}
 
 	.header-bg-korea {
-		max-width: 119%;
-		height: 70%;
-		top: 18%;
-		left: 1%;
+		max-width: 173%;
+		height: 140%;
+		top: -2%;
+		left: -6%;
 	}
 
 }
