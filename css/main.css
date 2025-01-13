@@ -319,12 +319,13 @@ body {
     display: inline-block;
     position: absolute;
     z-index: 2;
-    opacity: 30%;
+    opacity: 15%;
     max-width: 146%;
     height: 156%;
     top: -15%;
     left: 7%;
     filter: drop-shadow(0 6px 12px rgba(200, 180, 220, 0.4));
+    filter: blur(2px);
 
 }
 
