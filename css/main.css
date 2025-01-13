@@ -313,6 +313,7 @@ body {
     top: 109px;
     left: -19%;
     border-radius: 52%;
+    filter: blur(2px);
 }
 
 .header-bg-korea {
@@ -332,21 +333,24 @@ body {
 
 .bg-sakura-header {
     position: absolute;
-    left: -62%;
+    left: -70%;
     top: -51px;
     opacity: 6%;
     width: 84%;
     height: 192%;
+    filter: blur(2px);
 }
 
 .bg-faq {
     position: absolute;
-    opacity: 10%;
+    opacity: 8%;
     width: 36%;
-    height: 99vh;
+    height: 85vh;
     object-fit: cover;
     left: -4rem;
+    filter: blur(2px);
 }
+
 
 .header-img.visible {
     opacity: 1;
@@ -385,10 +389,11 @@ body {
 /* Reviews */
 .clients-bg-img {
     position: absolute;
-    opacity: 13%;
+    opacity: 4%;
     width: 30%;
     right: 0;
     top: 0;
+    filter: blur(2px);
 }
 
 .clients-slider-wrapper {
