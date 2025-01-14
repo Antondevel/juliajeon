@@ -496,15 +496,19 @@
 	}
 
 	.bg-sakura-header {
-		left: -75px;
+		display: none;
 	}
 
 	.header-bg-korea {
-		max-width: 173%;
-		height: 140%;
-		top: -2%;
-		left: -6%;
+		max-width: 163%;
+		height: 121%;
+		top: -3%;
+		left: -28%;
+
+		opacity: 12%;
+		filter: blur(6px);
 	}
+
 
 }
 
