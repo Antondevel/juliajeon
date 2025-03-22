@@ -360,17 +360,18 @@ body {
     /* Вернуть в исходное положение */
 }
 
+
+
+/* About */
+
 svg {
 
     display: block;
     margin-bottom: -5px;
     /* Убирает зазор между секциями */
-    margin-top: -28%;
+    margin-top: -25%;
     z-index: 10;
 }
-
-
-/* About */
 
 .text {
     font-size: 20px;
