@@ -318,6 +318,7 @@ body {
 }
 
 .header-bg-korea {
+    display: none;
     display: inline-block;
     position: absolute;
     z-index: 2;

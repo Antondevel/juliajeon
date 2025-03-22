@@ -184,19 +184,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-function updateImage() {
-    const img = document.getElementById('responsive-img');
-    if (window.innerWidth <= 500) {
-        img.src = '/img/decor-pic/GPT.jpg';
-    } else {
-        img.src = '/img/decor-pic/header-bg.png';
-    }
-}
+// function updateImage() {
+//     const img = document.getElementById('responsive-img');
+//     if (window.innerWidth <= 500) {
+//         img.src = '/img/decor-pic/GPT.jpg';
+//     } else {
+//         img.src = '/img/decor-pic/header-bg.png';
+//     }
+// }
 
-// Проверить при загрузке страницы
-updateImage();
+// // Проверить при загрузке страницы
+// updateImage();
 
-// Проверять при изменении размера окна
-window.addEventListener('resize', updateImage);
+// // Проверять при изменении размера окна
+// window.addEventListener('resize', updateImage);
 
 

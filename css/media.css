@@ -413,7 +413,50 @@
 	}
 
 	.julia-pic {
-		left: -1rem;
+		left: -2rem;
+	}
+
+	.julia-pic::after {
+		content: '';
+		position: absolute;
+		top: -10px;
+		left: -10px;
+		right: -10px;
+		bottom: -10px;
+		background: rgba(0, 0, 0, 0.5);
+		/* Полупрозрачная тень */
+		border-radius: 15px;
+		/* Округлые углы тени */
+		z-index: -1;
+		/* Помещает тень за изображением */
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+		/* Тень вокруг объекта */
+	}
+
+
+
+
+	.ring {
+		width: 25rem;
+		height: 25rem;
+		border: 30px solid #FDA300;
+		border-radius: 50%;
+		box-sizing: border-box;
+		position: absolute;
+		top: 18%;
+		left: 6%;
+		right: 6%;
+	}
+
+
+
+	svg {
+
+		display: block;
+		margin-bottom: -5px;
+		/* Убирает зазор между секциями */
+		margin-top: -30%;
+		z-index: 10;
 	}
 
 	.container {
@@ -506,18 +549,30 @@
 	}
 
 	.header-bg-korea {
-		max-width: 165%;
+		display: none;
+		/* max-width: 165%;
 		height: 122%;
 		top: 0%;
 		left: -32%;
 		opacity: 10%;
-		filter: blur(2px);
+		filter: blur(2px); */
 	}
 
 
 }
 
 @media (max-width: 430px) {
+	.ring {
+		width: 22rem;
+		height: 22rem;
+		border: 30px solid #FDA300;
+		border-radius: 50%;
+		box-sizing: border-box;
+		position: absolute;
+		top: 18%;
+		left: 6%;
+		right: 6%;
+	}
 
 	.clients__item {
 		width: 100%;
@@ -525,6 +580,18 @@
 }
 
 @media (max-width: 414px) {
+	.ring {
+		width: 22rem;
+		height: 22rem;
+		border: 30px solid #FDA300;
+		border-radius: 50%;
+		box-sizing: border-box;
+		position: absolute;
+		top: 18%;
+		left: 5%;
+		right: 6%;
+	}
+
 	.clients__item {
 		width: 100%;
 	}
