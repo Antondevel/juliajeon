@@ -65,7 +65,7 @@ body {
 
 .section--about {
     position: relative;
-    padding: 60px 20px;
+    /* padding: 60px 20px; */
     color: #fff;
 }
 
@@ -132,6 +132,7 @@ body {
     background-color: #160f1c;
     overflow: hidden;
 }
+
 
 .header-nav {
     display: flex;
@@ -358,6 +359,16 @@ body {
     transform: translateX(0);
     /* Вернуть в исходное положение */
 }
+
+svg {
+
+    display: block;
+    margin-bottom: -5px;
+    /* Убирает зазор между секциями */
+    margin-top: -28%;
+    z-index: 10;
+}
+
 
 /* About */
 
