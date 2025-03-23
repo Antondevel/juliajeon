@@ -569,14 +569,14 @@
 
 @media (max-width: 430px) {
 	.ring {
-		width: 22rem;
-		height: 22rem;
+		width: 23rem;
+		height: 23rem;
 		border: 30px solid #FDA300;
 		border-radius: 50%;
 		box-sizing: border-box;
 		position: absolute;
 		top: 18%;
-		left: 6%;
+		left: 5%;
 		right: 6%;
 	}
 
@@ -605,8 +605,6 @@
 	}
 
 }
-
-
 
 @media (max-width: 360px) {
 	.ring {
