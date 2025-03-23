@@ -180,7 +180,7 @@
 
 	/* Адаптация секции About */
 	#about {
-		min-height: 60vh;
+		min-height: 83vh;
 	}
 
 	/* Стили для блока клиентов */
@@ -412,6 +412,12 @@
 		overflow-x: hidden;
 	}
 
+	.section {
+
+		padding: 15px 0px;
+
+	}
+
 	.julia-pic {
 		left: -2rem;
 	}
@@ -577,6 +583,8 @@
 	.clients__item {
 		width: 100%;
 	}
+
+
 }
 
 @media (max-width: 414px) {
@@ -595,4 +603,30 @@
 	.clients__item {
 		width: 100%;
 	}
+
+}
+
+
+
+@media (max-width: 360px) {
+	.ring {
+		width: 20rem;
+		height: 20rem;
+		border: 30px solid #FDA300;
+		border-radius: 50%;
+		box-sizing: border-box;
+		position: absolute;
+		top: 18%;
+		left: 3%;
+		right: 6%;
+	}
+
+	.slider-btn {
+		width: 42px;
+		height: 42px;
+	}
+
+
+
+
 }
