@@ -492,11 +492,11 @@ svg {
 }
 
 .prev-btn {
-    left: 30px;
+    left: 7%;
 }
 
 .next-btn {
-    right: 30px;
+    right: 8%;
 }
 
 .prev-btn:hover,
