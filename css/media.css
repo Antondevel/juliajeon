@@ -488,6 +488,14 @@
 		padding-right: 18px;
 	}
 
+	.prev-btn {
+		left: 7%;
+	}
+
+	.next-btn {
+		right: 8%;
+	}
+
 	.clients__item {
 		width: 99%;
 		padding-left: 0;
